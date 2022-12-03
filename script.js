@@ -23,4 +23,8 @@ function switchTheme() {
   let footer = document.getElementsByClassName("navbar")[ document.getElementsByClassName("navbar").length-1];
   footer.style.float = "right";
   footer.style.color = "white";
+
+  let header = document.getElementsByTagName("h1")[0];
+  header.innerHTML = "This is the Dark theme";
+  header.style.color = "white";
 }

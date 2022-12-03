@@ -34,5 +34,27 @@ function switchTheme() {
   }
   else {
     body.classList.remove("bg-dark");
+    nav.classList.remove("bg-dark", "navbar-dark");
+
+    for (let card of cards) {
+      card.classList.remove("text-white", "bg-dark", "border-light");
+      card.parentElement.classList.remove("col-md-12");
+    }
+
+    table.style.backgroundColor = "white";
+    for (let tre of tr) {
+      tre.style.color = "black";
+    }
+
+    let footer = document.getElementsByClassName("navbar")[document.getElementsByClassName("navbar").length - 1];
+    footer.style.float = "left";
+    footer.style.color = "black";
+
+    let header = document.getElementsByTagName("h1")[0];
+    header.innerHTML = "This is the Light theme";
+    header.style.color = "black";
+
+
+    button.innerHTML = "Activate Dark Theme";
   }
 }

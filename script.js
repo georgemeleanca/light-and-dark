@@ -19,4 +19,8 @@ function switchTheme() {
   for (let tre of tr) {
     tre.style.color = "white";
   }
+
+  let footer = document.getElementsByClassName("navbar")[ document.getElementsByClassName("navbar").length-1];
+  footer.style.float = "right";
+  footer.style.color = "white";
 }

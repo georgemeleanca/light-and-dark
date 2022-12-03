@@ -27,4 +27,7 @@ function switchTheme() {
   let header = document.getElementsByTagName("h1")[0];
   header.innerHTML = "This is the Dark theme";
   header.style.color = "white";
+
+  let button = document.getElementById("themeSwitch");
+  button.innerHTML = "Activate Light Theme";
 }

@@ -1,3 +1,4 @@
 function switchTheme() {
-  // TODO: implement toggling the light/dark theme
+  let body = document.getElementsByTagName("body")[0];
+  body.classList.add("bg-dark");
 }
